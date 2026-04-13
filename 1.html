@@ -1,0 +1,223 @@
+<html>
+
+<head>
+
+ <title>Задание 1</title>
+ <style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f1;
+}
+
+.container {
+width: 100%;
+background-color: white;
+}
+
+.shap {
+background: linear-gradient(to right, #ffffff, #B0E0E6);
+color: red;
+	font-family: ALGERIAN;
+padding: 20px;
+text-align: center;
+font-size: 35px;
+font-weight: bold;
+
+}
+
+.menu {
+background-color: #E0FFFF;
+overflow: hidden;
+}
+
+.menu a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 25px;
+text-decoration: none;
+}
+
+.menu a:hover {
+background-color: #00BFFF;
+}
+h3 {
+
+ background-color: #3498db;
+ color: white;
+ padding: 10px;
+ margin: 0;
+ border-radius: 10px;
+}
+.left {
+float: left;
+width: 200px;
+background-color: #f5f5f5;
+padding: 15px;
+min-height: 500px;
+}
+
+.right {
+float: right;
+width: 200px;
+background-color: #f5f5f5;
+padding: 15px;
+min-height: 500px;
+}
+
+.center {
+overflow: hidden;
+padding: 15px;
+background-color: white;
+min-height: 500px;
+}
+.card {
+float: left;
+width: 250px;
+margin: 10px;
+border: 1px solid #ddd;
+background-color: #fafafa;
+
+}
+.card-img {
+width: 250px;
+height: 250px;
+position: relative;
+cursor: pointer;
+overflow: hidden;
+}
+
+.card-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+ .tooltip {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.8);
+color: white;
+	 font-weight: bold;
+padding: 8px 12px;
+font-size: 14px;
+text-align: center;
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s ease;
+
+}
+.card-img:hover .tooltip {
+opacity: 1;
+visibility: visible;
+}
+.tooltip.red-text {
+ color: red;
+}
+
+@media screen and (max-width: 1100px) {
+
+.card {
+ display: inline-block;
+ float: none;
+ vertical-align: top;
+}
+}
+
+@media screen and (max-width: 700px) {
+.left, .right {
+ float: none;
+ width: 100%;
+}
+.center {
+ overflow: visible;
+}
+}
+ </style>
+</head>
+<body>
+ <div class="container">
+<div class="shap">ИНСТРУКШИОНАЛ ДИЗАЙН</div>
+
+<div class="menu">
+<a href="#">Главная</a>
+<a href="#">Отделы продаж</a>
+<a href="#">Поставщики</a>
+<a href="#">Контакты</a>
+<a href="#">О нас</a>
+</div>
+
+<div class="left">
+<h3>Новости</h3>
+<ul><li>В Пермеском краю из женщины вышла черепаха</li>
+<li>Посетительницу торгового центра невзлюбили сразу два кофейных робота</li>
+<li>12 тонн украденных батончиков KitKat решили искать с помощью любителей сладостей Об этом сообщает "Рамблер".</li></ul>
+</div>
+
+<div class="right">
+<h3>Контакты</h3>
+<ul><li> Адрес: Москва, улица Пушкина, дом Колотушкина 221б</li>
+<li>Телефон: 8 800 555 35 35</li></ul>
+<div style="margin-top: 30px;">
+ <h3>Услуги</h3>
+ <ul class="sidebar-list">
+<li>Разработка очка\ов для слепых людей</li>
+<li>Отпуск лекарств на Бали</li>
+<li>Создание прекрасных дизайнов для вашего сайта</li>
+ </ul>
+</div>
+</div>
+
+<div class="center">
+
+
+ <div class="card">
+<div class="card-img">
+<img src="1.png" >
+<div class="tooltip red-text">ЛИКВИДИРОВАН</div>
+</div>
+ </div>
+ <div class="card">
+<div class="card-img">
+<img src="2.png" >
+<div class="tooltip red-text">ЛИКВИДИРОВАН</div>
+</div>
+ </div>
+ <div class="card">
+<div class="card-img">
+<img src="3.png" >
+<div class="tooltip red-text">ЛИКВИДИРОВАН</div>
+</div>
+ </div>
+ <div class="card">
+<div class="card-img">
+<img src="4.png" >
+<div class="tooltip">Pinterest</div>
+</div>
+ </div>
+ <div class="card">
+<div class="card-img">
+<img src="5.png" >
+<div class="tooltip">VK</div>
+</div>
+ </div>
+ <div class="card">
+<div class="card-img">
+<img src="6.png" >
+<div class="tooltip">Одноклассники</div>
+</div>
+ 
+</div>
+</div>
+ </div>
+</body>
+</html>
