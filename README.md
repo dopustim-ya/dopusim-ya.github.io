@@ -1,1 +1,0 @@
-# dopusim-ya.github.io
